@@ -116,3 +116,22 @@ html , body{
     border-bottom: 1px solid;
     padding-bottom: 5px;
 }
+
+@media(max-width:500px)
+{
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+    /* #main #left #textcenter{
+        margin-top: 30px;
+    } */
+
+    #main #right{
+        width:100%
+    }
+}
