@@ -2,6 +2,7 @@
     padding : 0;
     margin : 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html , body{
@@ -14,13 +15,14 @@ html , body{
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #left{
+    position: relative;
     width: 40%;
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 #right{
@@ -39,17 +41,78 @@ html , body{
 #rtopleft{
     width: 55%;
     height: 100%;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
+    background-image: url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
+    background-position: bottom;
+    background-size: cover;
 }
 
 #rtopright{
     width: 45%;
     height: 100%;
-    background-color: aqua;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80);
+    background-position: center;
+    background-size: cover;
 }
 
 #rbottom{
     width: 100%;
     height: 50%;
-    background-color: magenta;
+    /* background-color: magenta; */
+    background-image: url(https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lnavr {
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+#lnavr i{
+    color: rgb(0, 149, 248);
+}
+
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#textcenter h1{
+    font-size: 100px;
+    font-weight: 1000;
+}
+
+#textcenter p{
+    opacity: .6;
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 550;
+    opacity: .7;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
 }
